@@ -1,0 +1,9 @@
+.wrangler/
+node_modules/
+.DS_Store
+*.log
+# Your own shop details (written by deploy.mjs)
+brand.json
+wrangler.toml
+public/logo.*
+public/robots.txt
