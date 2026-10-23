@@ -28,6 +28,23 @@ Scammers who "fix" a customer's computer leave a way back in. This audit finds t
 - **Keeps everything on the PC.** The audit sends nothing anywhere. The report is saved to the Desktop.
 - **Works on Windows 7 SP1, 8.1, 10 and 11.**
 
+## Try it first (no setup)
+
+Want to see it before you set anything up? Run our hosted copy on any Windows PC. Open **Windows PowerShell** and paste:
+
+```powershell
+irm audit.nerdyneighbor.net | iex
+```
+
+It's the same audit your shop gets, with Nerdy Neighbor's name and logo on it. Click **Yes** on the Windows prompt, look through the findings, then close the window to see the report. Click **Print (1 page)** to preview the customer report.
+
+> Our copy treats the remote tools *we* deploy (SuperOps, OpenSSH and our own RustDesk server) as allowed. To see every tool flagged, the way your own copy will by default, run this instead:
+> ```powershell
+> $env:NN_AUDIT_TRUST='none'; irm audit.nerdyneighbor.net | iex
+> ```
+
+You don't have to click any Fix buttons to try it. Scanning on its own changes nothing.
+
 ## What you need
 
 | | |
